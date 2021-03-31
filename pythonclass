@@ -48,7 +48,22 @@ print(data1.value)
 
 for i in range(1, 190):
 	print(realestatedata.cell(row=i, column=10).value)
-  
+
+for i in range(1, 190):
+  price = realestatedata.cell(row=i, column=4).value
+  print(price)
+  houseType = realestatedata.cell(row=i, column=1).value
+  print(houseType)
+  description = realestatedata.cell(row=i, column=2).value
+  print(description)
+  numberBedrooms = realestatedata.cell(row=i, column=3).value
+  print(numberBedrooms)
+
+  houseprice = (houseType,description,numberBedrooms,price)
+
+  for x in array1:
+    print(x)
+    
   #output
   
   print all sheets in Excel Workbook
