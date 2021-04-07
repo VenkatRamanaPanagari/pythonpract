@@ -1,0 +1,23 @@
+## Program 1:
+
+import openpyxl as op
+wb=op.load_workbook('/content/realestatedata.xlsx')
+mysheets=wb.sheetnames
+print("print all the sheets in the excel")
+for i in mysheets:
+  print(i)
+sheet=wb['Venkat_Ramana']
+print("type of the sheet")
+print(type(sheet))
+print("sheet name")
+print(sheet.title)
+
+## Program 1 Output:
+
+print all the sheets in the excel
+Sheet2
+Venkat_Ramana
+type of the sheet
+<class 'openpyxl.worksheet.worksheet.Worksheet'>
+sheet name
+Venkat_Ramana
